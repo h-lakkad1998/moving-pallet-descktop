@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(248, 230, 197);
+    height: 100vh;  
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+h4{
+    color: #000;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 26px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#gallery{
+    width: 140vmax;
+    height: 140vmax;
+    position: absolute;
+    z-index: 2;
+}
+.tile {
+    border-radius: 1vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.119);
+}
+.tile:hover{
+    transform: scale(1.1);
+}
+.tile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vmax;
+
+}
+.tile a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0;
+    transform: scale(1.01);
+    transition: all 800ms ease;
+}
+.tile a:hover img{
+
+    opacity: 1;
+}
+
+
+.tile:nth-child(1) {
+    background-color: rgb(253, 195, 114);
+    height: 14%;
+    width: 20%;
+    left: 5%;
+    top: 5%;
+}
+
+.tile:nth-child(2) {
+background-color: rgb(117, 193, 255);
+height: 24%;
+width: 14%;
+left: 42%;
+top: 12%;
+}
+
+.tile:nth-child(3) {
+background-color: rgb(255, 130, 128);
+height: 18%;
+width: 16%;
+left: 12%;
+top: 34%;
+}
+
+.tile:nth-child(4) {
+background-color: rgb(151, 250, 156);
+height: 14%;
+width: 12%;
+left: 45%;
+top: 48%;
+}
+
+.tile:nth-child(5) {
+background-color: rgb(228, 137, 244);
+height: 16%;
+width: 32%;
+left: 8%;
+top: 70%;
+}
+
+.tile:nth-child(6) {
+background-color: rgb(255, 167, 38);
+height: 24%;
+width: 24%;
+left: 68%;
+top: 8%;
+}
+
+.tile:nth-child(7) {
+background-color: rgb(137, 152, 237);
+height: 16%;
+width: 20%;
+left: 50%;
+top: 74%;
+}
+
+.tile:nth-child(8) {
+background-color: rgb(219, 188, 177);
+height: 24%;
+width: 18%;
+left: 72%;
+top: 42%;
+}
+
+.tile:nth-child(9) {
+background-color: rgb(206, 206, 206);
+height: 10%;
+width: 8%;
+left: 84%;
+top: 84%;
+}
